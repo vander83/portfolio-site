@@ -1,0 +1,372 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  height: 50px;
+  position: fixed;
+  background: #333;
+  z-index: 40;
+}
+
+.brand {
+  text-transform: uppercase;
+  font-family: 'Bangers', cursive;
+}
+
+.brand a {
+  color: #fff;
+}
+
+.burger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.burger-line-1, .burger-line-2, .burger-line-3 {  
+  height: 3px;
+  width: 30px;
+  margin: 6px 0;
+  background-color: white;
+  transition: 0.4s;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  color: #fff;
+  padding-left: 20px;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  font-family: 'Bangers', cursive;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  border-bottom: 2px solid orange;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.showcase-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  width: 100%;
+}
+
+.showcase-title {
+  position: absolute;
+  color: red;
+  text-shadow: 2px 2px #fff;
+  font-family: 'Bangers', cursive;
+  font-size: 8rem;
+  top: 5%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  z-index: 30;
+}
+
+.showcase-title-2 {
+  display:none;
+  /* position: absolute;
+  color: red;
+  text-shadow: 2px 2px #fff;
+  font-family: 'Bangers', cursive;
+  font-size: 8rem;
+  top: 5%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  z-index: 30; */
+}
+
+.showcase-left {
+  height: 100vh;
+  background: url(img/cover-2.jpg) center center/cover no-repeat;
+  z-index: 20;
+}
+
+.showcase-right {
+  /* position: relative; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: orange;
+  background-image: radial-gradient(#333 2px, transparent 2px);
+  background-size: 10px 10px;
+  z-index: 10;
+}
+
+.showcase-subtitle {
+  position: absolute;
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;
+  top: 30%;
+  left:50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  padding: 30% 15% 0% 2%;
+  color: #eee;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 2px #333;
+  filter: drop-shadow(4px 4px rgba(20, 20, 20, 0.5));
+  z-index: 30;
+}
+
+.work {
+  padding: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* font-size: 1.5rem; */
+  font-family: 'Bangers', cursive;
+  color: #333;
+}
+
+.work-items {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.work-heading {
+  padding: 20px;
+}
+
+.work h2 {
+  margin: 0.2rem;
+  font-size: 2.5rem;
+}
+
+.work-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+.work-item h3 {
+  font-size: 2rem;
+}
+
+.work-item a {
+  color:#333;
+}
+
+.work-item img{
+  max-width: 80%;
+}
+
+.about {
+  background-color: teal;
+  color: #fff;
+  padding: 60px;
+  width: 100%;
+}
+
+.about-heading {
+  font-family: 'Bangers', cursive;
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 2px orange;
+  filter: drop-shadow(3px 3px rgba(255, 165, 0, 0.5));
+  text-align: center;
+}
+
+.about-body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 20%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  text-align: center;
+  background-color: orange;
+  background-image: radial-gradient(#333 2px, transparent 2px);
+  background-size: 10px 10px;
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;
+  color: #eee;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 2px #333;
+}
+
+.contact h2 {
+  filter: drop-shadow(4px 4px rgba(20, 20, 20, 0.5));
+  margin: 0;
+}
+
+.contact h3 {
+  filter: drop-shadow(4px 4px rgba(20, 20, 20, 0.5));
+}
+
+.contact-details {
+  color: #fff;
+  text-shadow: 2px 2px red;
+  margin: 0;
+}
+
+.contact-details p {
+  padding: 10px;
+  margin: 0;
+}
+
+footer {
+  margin: 0;
+  background-color: #333;
+  color: teal;
+  text-align: center;
+}
+
+footer h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;
+  text-shadow: 1px 1px #fff;
+  margin: 0;
+  padding: 20px;
+} 
+
+@media screen and (max-width: 1200px) {
+  .work h2 {
+    margin: 0.2rem;
+    font-size: 2.2rem;
+  }
+
+  .showcase-subtitle {
+    padding-top: 50%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .work-item {  
+    grid-template-columns: 1fr;
+  }
+  .work h2 {
+    margin: 0.2rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .showcase-title {
+    font-size: 7rem;
+    top: 12%;
+  }
+  
+  .showcase-subtitle {
+    display: none;    
+  }
+
+  .showcase-title-2 {
+    position: absolute;
+    display: flex;
+    color: #fff;
+    padding: 0 15%;
+    margin: 0;
+    text-shadow: 2px 2px #333;
+    filter: drop-shadow(4px 4px rgba(20, 20, 20, 0.5));
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 60%;
+    /* left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%); */
+    z-index: 30;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  
+
+  nav {
+    display: none;
+  }
+
+  .burger {
+    display: inline-block;
+    z-index: 50;
+  }
+
+  .showcase-title {
+    font-size: 5rem;
+    top: 12%;
+  }
+
+  .work {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bangers', cursive;
+    color: #333;
+  }
+
+  .work-heading {
+    padding: 0;
+  }
+
+  .work h2 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+
+  .work-item {
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .work-item {
+    font-size: 1.5rem;
+  }
+
+  .work-item a {
+    color:#333;
+  }
+
+  .work-item img{
+    max-width: 80%;
+  }
+}
