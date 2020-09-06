@@ -1,19 +1,37 @@
+/* ============= */
+/* GLOBAL STYLES */
+/* ============= */
+
 html, body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
-  background: url(/img/cover-2.jpg) no-repeat center center/cover;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
-  padding: 2%;
+  padding: 3%;
   position: relative;
+}
+
+
+
+.home-page-background {
+  background: url(/img/cover-2.jpg) no-repeat center center/cover;
+}
+
+.about-page-background, .projects-page-background{
+  background-color: teal;
 }
 
 header {
@@ -36,34 +54,9 @@ header {
   letter-spacing: 0.08rem;
 }
 
-main {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-}
-
-main h1 {
-  font-family: 'Bangers', cursive;
-  color: red;
-  text-transform: uppercase;
-  letter-spacing: 0.08rem;
-  text-shadow: 2px 2px 0 white;
-  font-size: 4.5rem;
-  padding-bottom: 4rem;
-}
-
-main h2 {
-  font-family: 'Bangers', cursive;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.08rem;
-  text-shadow: 2px 2px 0 #333;
-  letter-spacing: 0.1rem;
-  padding-bottom: 50px;
-}
+/* ==== */
+/* MENU */
+/* ==== */
 
 .menu-button {
   display: flex;
@@ -73,7 +66,7 @@ main h2 {
   width: 50px;
   border-radius: 50%;
   padding: 2px 3px;
-  position: absolute;
+  position: fixed;
   bottom: 30px;
   left: 50vw;
   transform: translateX(-50%);
@@ -93,7 +86,7 @@ main h2 {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
@@ -106,14 +99,14 @@ nav {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease-in-out;
-  transform: translateY(100vh);
+  transform: translateX(100vw);
 }
 
 .menu-show {
-  transform: translateY(0vh);
+  transform: translateX(0vw);
 }
 
-nav > div {
+nav div {
   font-family: 'Bangers', cursive;
   color: #fff;
   text-transform: uppercase;
@@ -122,3 +115,165 @@ nav > div {
   padding-bottom: 1rem;
 }
 
+/* ===== */
+/* PAGES */
+/* ===== */
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+main h1 {
+  font-family: 'Bangers', cursive;
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  text-shadow: 2px 2px 0 white;
+  font-size: 2.3rem;
+  padding: 30px 0 16px 0;
+}
+
+main h2 {
+  font-family: 'Bangers', cursive;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  text-shadow: 2px 2px 0 #333;
+  letter-spacing: 0.1rem;
+  padding-bottom: 50px;
+}
+
+p {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p .intro-text, .outro-text {
+  font-family: 'Lobster', cursive;
+  font-size: 1.2rem;
+}
+
+/* ============= */
+/* Projects Page */
+/* ============= */
+.projects-grid {
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, minmax(100px, auto));
+  gap: 10px;
+  grid-template-areas: 
+  "project1 project2 project2 project2"
+  "project1 project3 project3 project4"
+  "project5 project5 project6 project6"
+  "project5 project5 project6 project6"
+  ;
+}
+
+.projects-grid > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ff7b00;
+  padding: 5px;
+  box-shadow: 2px 2px 5px #333;
+}
+
+.project-1 {
+  grid-area: project1;
+}
+.project-2 {
+  grid-area: project2;
+}
+.project-3 {
+  grid-area: project3;
+}
+.project-4 {
+  grid-area: project4;
+}
+.project-5 {
+  grid-area: project5;
+}
+.project-6 {
+  grid-area: project6;
+}
+
+/* ============ */
+/* CONTACT PAGE */
+/* ============ */
+
+.contact-page-background {
+  background-color: #ff7b00;
+  background-image: radial-gradient(#d66800 2px, transparent 2px);
+  background-size: 10px 10px;
+}
+
+.contact-page p {
+  font-size: 1.2rem;
+  font-family: 'Bangers', cursive;
+  text-shadow: 2px 2px 4px #333;
+  letter-spacing: 0.1rem;
+}
+
+.contact-page p:nth-child(2) {
+  padding-bottom: 20px;
+}
+
+.email {
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.contact-icons div {
+  padding: 10px;
+}
+
+/* ============= */
+/* MEDIA QUERIES */
+/* ============= */
+
+@media only screen and (min-width: 768px) {
+  main h1 {
+    font-size: 4rem;
+  }
+
+  nav div {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+  
+  p .intro-text, .outro-text {
+    font-size: 2.2rem;
+  }
+
+  .projects-grid {
+    grid-template-rows: repeat(4, minmax(200px, auto));
+  }
+
+  .contact-page p {
+    font-size: 3rem;
+  }
+
+  .contact-icons {
+    font-size: 4rem;
+  }
+}
