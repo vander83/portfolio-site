@@ -19,39 +19,10 @@ a {
 
 .container {
   min-height: 100vh;
+  width: minmax(98%, 1200px);
   box-sizing: border-box;
-  padding: 3%;
+  padding: 5%;
   position: relative;
-}
-
-
-
-.home-page-background {
-  background: url(/img/cover-2.jpg) no-repeat center center/cover;
-}
-
-.about-page-background, .projects-page-background{
-  background-color: teal;
-}
-
-header {
-  background-color: #333;
-  height: 40px;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
-.logo {
-  font-family: 'Bangers', cursive;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.08rem;
 }
 
 /* ==== */
@@ -92,7 +63,7 @@ nav {
   z-index: 5;
   height: 100vh;
   width: 100vw;
-  background-color: #ff7b00;
+  background: url(/img/menu-bg-1.jpg) center center/cover;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -115,9 +86,47 @@ nav div {
   padding-bottom: 1rem;
 }
 
+p {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
 /* ===== */
 /* PAGES */
 /* ===== */
+
+.logo, .page-title {
+  font-family: 'Bangers', cursive;
+  color: #ff7b00;
+  text-shadow: 2px 2px 0 #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 2rem;
+}
+
+/* ========= */
+/* HOME PAGE */
+/* ========= */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;  
+}
+
+.home-page-background {
+  background: url(img/pop-art-bg-1.jpg) no-repeat center center/cover;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
 
 main {
   height: 100%;
@@ -126,31 +135,37 @@ main {
   text-align: center;
   /* justify-content: center; */
   /* align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 
-main h1 {
+.home-page p {
   font-family: 'Bangers', cursive;
-  color: red;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
-  text-shadow: 2px 2px 0 white;
-  font-size: 2.3rem;
-  padding: 30px 0 16px 0;
+  text-shadow: 2px 2px 0 #333;
+  font-size: 3rem;
 }
 
-main h2 {
+.main-title {
   font-family: 'Bangers', cursive;
   color: white;
+  font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
   text-shadow: 2px 2px 0 #333;
   letter-spacing: 0.1rem;
-  padding-bottom: 50px;
+  margin: auto;
+  padding-top: 10vh;
 }
 
-p {
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
+/* ========== */
+/* ABOUT PAGE */
+/* ========== */
+
+.about-page-background {
+  background-color: #4e8f8c;
 }
 
 p .intro-text, .outro-text {
@@ -158,10 +173,90 @@ p .intro-text, .outro-text {
   font-size: 1.2rem;
 }
 
+.about-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 60px auto;
+  max-width: 1200px;
+}
+
+.about-page-content .page-title {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-page-content h1 {
+
+}
+
+.text-panel {
+  text-align: left;
+}
+
+.sub-title{
+  font-family: 'Bangers', cursive;
+  color: #ff7b00;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.08rem;
+  text-shadow: 2px 2px 0 #fff;
+  letter-spacing: 0.1rem;
+  margin-top: 3rem;
+  padding-bottom: 0;
+}
+
+.tools-familiar, .tools-dabble {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.tools-familiar div, .tools-dabble div {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.tool {
+  padding: 5px;
+}
+
+.tool img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
 /* ============= */
 /* Projects Page */
 /* ============= */
-.projects-grid {
+
+.projects-page-background {
+  background-color: #4e8f8c;
+}
+
+
+.projects-page .page-title {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .projects-grid {
+  margin-top: 20px;
   padding-top: 16px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -173,18 +268,44 @@ p .intro-text, .outro-text {
   "project5 project5 project6 project6"
   "project5 project5 project6 project6"
   ;
+} */
+
+.projects-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.projects-grid > div {
+.projects-grid div {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  background-color: #ff7b00;
-  padding: 5px;
+  
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
   box-shadow: 2px 2px 5px #333;
+  margin: 10px;
+}
+
+.projects-grid img {
+  max-width: 100%;
+}
+
+.projects-grid a {
+  color: #333;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: 'Bangers', cursive;
+}
+
+.description {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 1rem;
 }
 
 .project-1 {
@@ -211,9 +332,18 @@ p .intro-text, .outro-text {
 /* ============ */
 
 .contact-page-background {
-  background-color: #ff7b00;
-  background-image: radial-gradient(#d66800 2px, transparent 2px);
-  background-size: 10px 10px;
+  background: url(/img/contact-bg-1.jpg) center center/cover;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.contact-page .page-title {
+  margin-top: 1rem;
 }
 
 .contact-page p {
@@ -228,7 +358,7 @@ p .intro-text, .outro-text {
 }
 
 .email {
-  padding: 5px;
+  padding: 5px 20px;
   border: 1px solid #fff;
   border-radius: 5px;
 }
@@ -238,6 +368,7 @@ p .intro-text, .outro-text {
   justify-content: center;
   color: #fff;
   font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .contact-icons div {
@@ -249,7 +380,12 @@ p .intro-text, .outro-text {
 /* ============= */
 
 @media only screen and (min-width: 768px) {
-  main h1 {
+  
+  .logo, .page-title {
+    font-size: 3rem;
+  }
+
+  .main-title {
     font-size: 4rem;
   }
 
@@ -258,11 +394,19 @@ p .intro-text, .outro-text {
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   
   p .intro-text, .outro-text {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+
+  .about-page-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .sub-title {
+    font-size: 2.5rem;
   }
 
   .projects-grid {

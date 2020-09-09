@@ -7,18 +7,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container projects-page-background"> <!--Main container holding all other visual elements-->
+<body class="projects-page-background">
+
+  <nav class="main-menu">
+    <div class="home-link"><a href="index.html">home</a></div>
+    <div class="about-link"><a href="about.html">about</a></div>
+    <div class="projects-link"><a href="projects.html">projects</a></div>
+    <div class="contact-link"><a href="contact.html">contact</a></div>
+  </nav>
+
+    <div class="container projects-page"> <!--Main container holding all other visual elements-->
 
       <main>
-        <h1>projects</h1>
+        <div class="page-title">projects</div>
         
         <section class="projects-grid">
           <div class="project-1">
-            <p>Project 1</p>
+            <a href="https://www.hikingsouthafrica.co.za" target="_blank">
+              <img src="img/hikingsouthafrica.png" alt="Hiking South Africa">
+            </a>
+            <a href="https://www.hikingsouthafrica.co.za" target="_blank">www.hikingsouthafrica.co.za</a>
+            <p class="description">National hiking websites, built on WordPress.</p>
           </div>
           <div class="project-2">
-            <p>Project 2</p>
+            <a href="keyboard-drumkit/drumkit.html" target="_blank">
+            <img src="img/keyboard-drumkit.JPG" alt="Keyboard Drumkit">
+          </a>
+            <a href="keyboard-drumkit/drumkit.html" target="_blank">Keyboard Drumkit</a>
           </div>
           <div class="project-3">
             <p>Project 3</p>
@@ -36,12 +51,7 @@
 
       </main>
       <div id="menu-button" class="menu-button">menu&nbsp;</div>
-      <nav class="main-menu">
-        <div class="home-link"><a href="index.html">home</a></div>
-        <div class="about-link"><a href="about.html">about</a></div>
-        <div class="projects-link"><a href="projects.html">projects</a></div>
-        <div class="contact-link"><a href="contact.html">contact</a></div>
-      </nav>
+      
     </div>
     <script src="script.js"></script>
 </body>
