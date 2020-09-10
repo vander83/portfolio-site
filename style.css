@@ -166,7 +166,7 @@ main {
   font-family: 'Grandstander', sans-serif;
   text-shadow: 1px 1px 4px #333;
   text-transform: uppercase;
-  line-height: 2rem;
+  line-height: 1.6rem;
 }
 
 .about-page-background {
@@ -224,6 +224,10 @@ p .intro-text, .outro-text {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 10px;
+}
+
+.toolbox p {
+  margin-bottom: 0.5rem;
 }
 
 .tools-familiar, .tools-dabble {
@@ -294,6 +298,7 @@ p .intro-text, .outro-text {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
 .projects-grid > div {
@@ -438,6 +443,10 @@ p .intro-text, .outro-text {
 
   .about-page-layout {
     grid-template-columns: 2fr 1fr;
+  }
+
+  .about-page p {
+    line-height: 2rem;
   }
 
   .sub-title {
