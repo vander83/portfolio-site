@@ -45,7 +45,7 @@ a {
   background-color: #ff7b00;
   text-align: center;
   color: #fff;
-  font-family: 'Bangers', cursive;
+  font-family: 'Bangers', sans-serif;
   text-shadow: 3px 3px 4px #333;
   font-size: 1.3rem;
   box-shadow: 2px 2px 4px #333;
@@ -78,7 +78,7 @@ nav {
 }
 
 nav div {
-  font-family: 'Bangers', cursive;
+  font-family: 'Bangers', sans-serif;
   color: #fff;
   text-transform: uppercase;
   text-shadow: 3px 3px 0 #333;
@@ -93,7 +93,7 @@ nav div {
 /* ===== */
 
 .logo, .page-title {
-  font-family: 'Bangers', cursive;
+  font-family: 'Bangers', sans-serif;
   color: #ff7b00;
   text-shadow: 2px 2px 0 #fff;
   text-transform: uppercase;
@@ -137,7 +137,7 @@ main {
 }
 
 .home-page p {
-  font-family: 'Bangers', cursive;
+  font-family: 'Bangers', sans-serif;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
@@ -146,7 +146,7 @@ main {
 }
 
 .main-title {
-  font-family: 'Bangers', cursive;
+  font-family: 'Bangers', sans-serif;
   color: white;
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -163,7 +163,7 @@ main {
 
 .about-page p {
   color: #fff;
-  font-family: 'Grandstander', cursive;
+  font-family: 'Grandstander', sans-serif;
   text-shadow: 1px 1px 4px #333;
   text-transform: uppercase;
   line-height: 2rem;
@@ -180,7 +180,7 @@ main {
 }
 
 p .intro-text, .outro-text {
-  font-family: 'Bangers', cursive;
+  font-family: 'Bangers', sans-serif;
   font-size: 1.2rem;
   text-shadow: 2px 2px 4px #333;
 }
@@ -207,7 +207,7 @@ p .intro-text, .outro-text {
 }
 
 .sub-title{
-  font-family: 'Bangers', cursive;
+  font-family: 'Bangers', sans-serif;
   color: #ff7b00;
   text-transform: uppercase;
   font-size: 2rem;
@@ -296,11 +296,11 @@ p .intro-text, .outro-text {
   flex-wrap: wrap;
 }
 
-.projects-grid div {
+.projects-grid > div {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   
   border-radius: 10px;
@@ -317,13 +317,17 @@ p .intro-text, .outro-text {
 .projects-grid a {
   color: #333;
   font-size: 1.5rem;
+  font-family: 'Bangers', sans-serif;
+}
+
+.project-description {
   margin-top: 1.5rem;
-  font-family: 'Bangers', cursive;
 }
 
 .description {
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-family: 'Grandstander', sans-serif;
+  text-transform: uppercase;
   color: #333;
   font-size: 1rem;
 }
@@ -353,7 +357,7 @@ p .intro-text, .outro-text {
 
 .contact-page p {
   color: #fff;
-  font-family: 'Bangers', cursive;
+  font-family: 'Bangers', sans-serif;
   /* text-shadow: 2px 2px 0px #333; */
   text-transform: uppercase;
 }
@@ -375,7 +379,7 @@ p .intro-text, .outro-text {
 
 .contact-page p {
   font-size: 1.2rem;
-  font-family: 'Bangers', cursive;
+  font-family: 'Bangers', sans-serif;
   text-shadow: 2px 2px 4px #333;
   letter-spacing: 0.1rem;
 }
