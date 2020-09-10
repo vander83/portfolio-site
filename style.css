@@ -86,10 +86,7 @@ nav div {
   padding-bottom: 1rem;
 }
 
-p {
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-}
+
 
 /* ===== */
 /* PAGES */
@@ -164,16 +161,31 @@ main {
 /* ABOUT PAGE */
 /* ========== */
 
+.about-page p {
+  color: #fff;
+  font-family: 'Grandstander', cursive;
+  text-shadow: 1px 1px 4px #333;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
 .about-page-background {
   background-color: #4e8f8c;
 }
 
-p .intro-text, .outro-text {
-  font-family: 'Lobster', cursive;
-  font-size: 1.2rem;
+.about-page-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
-.about-page-content {
+p .intro-text, .outro-text {
+  font-family: 'Bangers', cursive;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px #333;
+}
+
+.about-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,12 +193,12 @@ p .intro-text, .outro-text {
   max-width: 1200px;
 }
 
-.about-page-content .page-title {
+.about-page .page-title {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
-.about-page-content h1 {
+.about-page h1 {
 
 }
 
@@ -202,8 +214,16 @@ p .intro-text, .outro-text {
   letter-spacing: 0.08rem;
   text-shadow: 2px 2px 0 #fff;
   letter-spacing: 0.1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-bottom: 0;
+}
+
+.toolbox {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .tools-familiar, .tools-dabble {
@@ -215,8 +235,8 @@ p .intro-text, .outro-text {
 
 .tools-familiar div, .tools-dabble div {
   display: flex;
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   margin: 10px;
   background-color: #fff;
   border-radius: 5px;
@@ -331,6 +351,13 @@ p .intro-text, .outro-text {
 /* CONTACT PAGE */
 /* ============ */
 
+.contact-page p {
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  /* text-shadow: 2px 2px 0px #333; */
+  text-transform: uppercase;
+}
+
 .contact-page-background {
   background: url(/img/contact-bg-1.jpg) center center/cover;
 }
@@ -401,8 +428,12 @@ p .intro-text, .outro-text {
     font-size: 2rem;
   }
 
-  .about-page-content h2 {
+  .about-page h2 {
     font-size: 2.5rem;
+  }
+
+  .about-page-layout {
+    grid-template-columns: 2fr 1fr;
   }
 
   .sub-title {
