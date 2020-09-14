@@ -299,6 +299,7 @@ p .intro-text, .outro-text {
   flex-direction: row;
   flex-wrap: wrap;
   padding-bottom: 40px;
+  justify-content: center;
 }
 
 .projects-grid > div {
@@ -306,8 +307,7 @@ p .intro-text, .outro-text {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  align-items: center;
-  
+  align-items: center;  
   border-radius: 10px;
   background-color: #fff;
   padding: 20px;
@@ -317,12 +317,21 @@ p .intro-text, .outro-text {
 
 .projects-grid img {
   max-width: 100%;
+  transition: transform 0.2s;
+}
+
+.projects-grid img:hover {
+  transform: scale(1.05);
 }
 
 .projects-grid a {
   color: #333;
   font-size: 1.5rem;
   font-family: 'Bangers', sans-serif;
+}
+
+.projects-grid a:hover {
+  color: #ff7b00;
 }
 
 .project-description {
