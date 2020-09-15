@@ -50,6 +50,14 @@ a {
   font-size: 1.3rem;
   box-shadow: 2px 2px 4px #333;
   cursor: pointer;
+  transition: 100ms ease;
+}
+
+.menu-button:hover {
+  height: 55px;
+  width: 55px;
+  font-size: 1.35rem;
+  box-shadow: 4px 4px 4px #333;
 }
 
 .menu-button-exit {
@@ -83,10 +91,12 @@ nav div {
   text-transform: uppercase;
   text-shadow: 3px 3px 0 #333;
   font-size: 3rem;
-  padding-bottom: 1rem;
+  padding: 0.5rem;
 }
 
-
+nav div a {
+  transition: 200ms ease;
+}
 
 /* ===== */
 /* PAGES */
@@ -408,12 +418,20 @@ p .intro-text, .outro-text {
   border-radius: 5px;
 }
 
+.email a:hover {
+  color: #ff7b00;
+}
+
 .contact-icons {
   display: flex;
   justify-content: center;
   color: #fff;
   font-size: 2rem;
   margin-bottom: 20px;
+}
+
+.contact-icons a:hover {
+  color: #ff7b00;
 }
 
 .contact-icons div {
@@ -436,6 +454,10 @@ p .intro-text, .outro-text {
 
   nav div {
     font-size: 4rem;
+  }
+
+  nav div a:hover {
+    color: #ff7b00;
   }
 
   p {
