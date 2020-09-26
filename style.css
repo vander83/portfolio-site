@@ -2,6 +2,12 @@
 /* GLOBAL STYLES */
 /* ============= */
 
+:root {
+  --primary-color: #ff7b00;
+  --secondary-color: #1F88A3;
+  --dark-color: #333;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -42,7 +48,7 @@ a {
   left: 50vw;
   transform: translateX(-50%);
   z-index: 10;
-  background-color: #ff7b00;
+  background-color: var(--primary-color);
   text-align: center;
   color: #fff;
   font-family: 'Bangers', sans-serif;
@@ -104,7 +110,7 @@ nav div a {
 
 .logo, .page-title {
   font-family: 'Bangers', sans-serif;
-  color: #ff7b00;
+  color:var(--primary-color);
   text-shadow: 2px 2px 0 #fff;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
@@ -127,7 +133,7 @@ header {
 }
 
 .home-page-background {
-  background: url(img/pop-art-bg-2.jpg) no-repeat center center/cover;
+  background: url(img/pop-art-bg-3.jpg) no-repeat center center/cover;
 }
 
 .home-page {
@@ -192,7 +198,7 @@ main {
 }
 
 .about-page-background {
-  background-color: #4e8f8c;
+  background-color:var(--secondary-color);
 }
 
 .about-page-layout {
@@ -230,7 +236,7 @@ p .intro-text, .outro-text {
 
 .sub-title{
   font-family: 'Bangers', sans-serif;
-  color: #ff7b00;
+  color: var(--primary-color);
   text-transform: uppercase;
   font-size: 2rem;
   letter-spacing: 0.08rem;
@@ -287,7 +293,7 @@ p .intro-text, .outro-text {
 /* ============= */
 
 .projects-page-background {
-  background-color: #4e8f8c;
+  background-color:var(--secondary-color);
 }
 
 
@@ -353,7 +359,7 @@ p .intro-text, .outro-text {
 }
 
 .projects-grid a:hover {
-  color: #ff7b00;
+  color:var(--primary-color);
 }
 
 .project-description {
@@ -399,7 +405,7 @@ p .intro-text, .outro-text {
 }
 
 .contact-page-background {
-  background: url(/img/contact-bg-1.jpg) center center/cover;
+  background: url(/img/contact-bg-2.jpg) center center/cover;
 }
 
 .contact-page {
@@ -431,7 +437,7 @@ p .intro-text, .outro-text {
 }
 
 .email a:hover {
-  color: #ff7b00;
+  color:var(--primary-color);
 }
 
 .contact-icons {
@@ -443,7 +449,7 @@ p .intro-text, .outro-text {
 }
 
 .contact-icons a:hover {
-  color: #ff7b00;
+  color: var(--primary-color);
 }
 
 .contact-icons div {
@@ -469,7 +475,7 @@ p .intro-text, .outro-text {
   }
 
   nav div a:hover {
-    color: #ff7b00;
+    color:var(--primary-color);
   }
 
   p {
