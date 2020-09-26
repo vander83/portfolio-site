@@ -127,12 +127,13 @@ header {
 }
 
 .home-page-background {
-  background: url(img/pop-art-bg-1.jpg) no-repeat center center/cover;
+  background: url(img/pop-art-bg-2.jpg) no-repeat center center/cover;
 }
 
 .home-page {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 main {
@@ -164,12 +165,23 @@ main {
   text-shadow: 2px 2px 0 #333;
   letter-spacing: 0.1rem;
   margin: auto;
-  padding-top: 10vh;
+  padding-top: 7vh;
+  opacity: 0;
+}
+
+.pop-art-guy {
+  position: absolute;
+  bottom: -60vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  height: 60vh;
 }
 
 /* ========== */
 /* ABOUT PAGE */
 /* ========== */
+
+
 
 .about-page p {
   color: #fff;
